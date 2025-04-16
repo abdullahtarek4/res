@@ -5,11 +5,11 @@ import subprocess
 import importlib
 
 try:
-    nlp = spacy.load("en_core_web_sm")
+    nlp = spacy.load("en_core_web_lg")
 except OSError:
-    subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
+    subprocess.run(["python", "-m", "spacy", "download", "en_core_web_lg"])
     importlib.invalidate_caches()
-    nlp = spacy.load("en_core_web_sm")
+    nlp = spacy.load("en_core_web_lg")
 
 def extract_resume_text(file):
     return extract_text(file)
