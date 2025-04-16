@@ -4,6 +4,3 @@ fpdf
 openai>=1.2.0
 PyPDF2
 pdfminer.six
-resume_parser
-get_suggestions
-report_generator
